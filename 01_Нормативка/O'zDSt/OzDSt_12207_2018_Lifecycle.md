@@ -8,29 +8,29 @@
 
 1. **Основные процессы:**
 
-    - Заказ и поставка.
+    * Заказ и поставка.
 
-    - Разработка (анализ требований, проектирование, кодирование, тестирование).
+    * Разработка (анализ требований, проектирование, кодирование, тестирование).
 
-    - Эксплуатация и Сопровождение.
+    * Эксплуатация и Сопровождение.
 
 1. **Вспомогательные процессы:**
 
-    - Документирование.
+    * Документирование.
 
-    - Управление конфигурацией.
+    * Управление конфигурацией.
 
-    - Обеспечение качества.
+    * Обеспечение качества.
 
-    - Верификация и Валидация.
+    * Верификация и Валидация.
 
 1. **Организационные процессы:**
 
-    - Управление (проектами).
+    * Управление (проектами).
 
-    - Создание инфраструктуры.
+    * Создание инфраструктуры.
 
-    - Обучение.
+    * Обучение.
 
 ## Связь с O'z DSt 1986
 
@@ -38,9 +38,9 @@
 
 ## Compliance Metadata
 
-| Process ID | 12207 Category | Implementation in AIS KRR |
-| :--- | :--- | :--- |
-| **LC-01** | Development | CI/CD Git Workflow |
-| **LC-02** | Quality Assurance | Vitest & Playwright Tests |
-| **LC-03** | Documentation | Markdown Docs (O'z DSt 1985) |
-| **LC-04** | Maintenance | Long-term support & updates |
+|Process ID|12207 Category|Implementation in AIS KRR|
+|:---|:---|:---|
+|**LC-01**|Development|CI/CDGitWorkflow|
+|**LC-02**|QualityAssurance|Vitest&PlaywrightTests|
+|**LC-03**|Documentation|MarkdownDocs(O'zDSt1985)|
+|**LC-04**|Maintenance|Long-termsupport&updates|

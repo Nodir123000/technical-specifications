@@ -25,12 +25,12 @@ Security Agent является главным исполнителем RBAC. И
 
 | Операция Process Agent | Минимальная роль | Проверяет через |
 |:---|:---|:---|
-| `create-document` | INSPECTOR | Security Agent → `authorize` |
-| `update-status` (черновик) | INSPECTOR | Security Agent → `authorize` |
-| `update-status` (утверждение) | CHIEF_INSPECTOR | Security Agent → `authorize` |
-| `calculate-damages` | INSPECTOR | Security Agent → `authorize` |
-| `close-finding` | INSPECTOR | Security Agent → `authorize` |
-| `assign-inspector` | CHIEF_INSPECTOR | Security Agent → `authorize` |
+| `create-document` | INSPECTOR | SecurityAgent→`authorize` |
+| `update-status`(черновик) | INSPECTOR | SecurityAgent→`authorize` |
+| `update-status`(утверждение) | CHIEF_INSPECTOR | SecurityAgent→`authorize` |
+| `calculate-damages` | INSPECTOR | SecurityAgent→`authorize` |
+| `close-finding` | INSPECTOR | SecurityAgent→`authorize` |
+| `assign-inspector` | CHIEF_INSPECTOR | SecurityAgent→`authorize` |
 
 ---
 
@@ -38,9 +38,9 @@ Security Agent является главным исполнителем RBAC. И
 
 | Операция Integration Agent | Инициатор | Авторизация |
 |:---|:---|:---|
-| `fetch-treasury` | Система (при создании ревизии) | Системный токен, INSPECTOR+ |
-| `send-to-portal` | CHIEF_INSPECTOR | Security Agent → CHIEF_INSPECTOR: X |
-| `sync-tax` | Система (по расписанию) | Системный токен |
+| `fetch-treasury` | Система(присозданииревизии) | Системныйтокен,INSPECTOR+ |
+| `send-to-portal` | CHIEF_INSPECTOR | SecurityAgent→CHIEF_INSPECTOR:X |
+| `sync-tax` | Система(порасписанию) | Системныйтокен |
 
 ---
 

@@ -77,17 +77,23 @@
 
 ## Preconditions
 
-- Пользователь аутентифицирован и имеет роль `INSPECTOR` или выше
-- `audit_id` существует в системе со статусом `IN_PROGRESS`
-- `organization_id` существует и доступен текущему инспектору
-- Транзакции за указанный период получены от Integration Agent
+* Пользователь аутентифицирован и имеет роль `INSPECTOR` или выше
+
+* `audit_id` существует в системе со статусом `IN_PROGRESS`
+
+* `organization_id` существует и доступен текущему инспектору
+
+* Транзакции за указанный период получены от Integration Agent
 
 ## Postconditions
 
-- Результат записан в таблицу `audit_findings` с привязкой к `audit_id`
-- Если `requires_human_review = true` — создана задача для руководителя
-- Событие `INSPECTION_COMPLETED` передано в Monitoring Agent
-- Все действия записаны в audit-лог через Security Agent
+* Результат записан в таблицу `audit_findings` с привязкой к `audit_id`
+
+* Если `requires_human_review = true` — создана задача для руководителя
+
+* Событие `INSPECTION_COMPLETED` передано в Monitoring Agent
+
+* Все действия записаны в audit-лог через Security Agent
 
 ---
 

@@ -70,17 +70,23 @@
 
 ## Preconditions
 
-- `audit_id` существует и имеет статус `APPROVED` или `COMPLETED`
-- `findings` не пустой массив (кроме типа `KPI_DASHBOARD`)
-- Пользователь имеет право генерации отчётов (роль `INSPECTOR+`)
-- Шаблон документа для указанного `report_type` существует в системе
+* `audit_id` существует и имеет статус `APPROVED` или `COMPLETED`
+
+* `findings` не пустой массив (кроме типа `KPI_DASHBOARD`)
+
+* Пользователь имеет право генерации отчётов (роль `INSPECTOR+`)
+
+* Шаблон документа для указанного `report_type` существует в системе
 
 ## Postconditions
 
-- Файл сохранён в защищённом хранилище
-- Запись о генерации создана в `report_registry`
-- Событие `REPORT_GENERATED` отправлено в Monitoring Agent
-- Ссылка на файл доступна через API `/api/reports/:report_id`
+* Файл сохранён в защищённом хранилище
+
+* Запись о генерации создана в `report_registry`
+
+* Событие `REPORT_GENERATED` отправлено в Monitoring Agent
+
+* Ссылка на файл доступна через API `/api/reports/:report_id`
 
 ---
 
